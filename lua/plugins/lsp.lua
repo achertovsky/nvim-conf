@@ -10,17 +10,6 @@ return {
         intelephense = {
           enabled = true,
 
-          -- Use the directory containing composer.json as the PHP project root.
-          root_dir = function(bufnr, on_dir)
-            local root = vim.fs.root(bufnr, {
-              "composer.json",
-            })
-
-            if root then
-              on_dir(root)
-            end
-          end,
-
           settings = {
             intelephense = {
               files = {
