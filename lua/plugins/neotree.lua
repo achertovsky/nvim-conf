@@ -4,12 +4,16 @@ return {
     keys = {
       {
         "<leader>e",
-        "<cmd>Neotree toggle<cr>",
+        "<cmd>Neotree reveal<cr>",
         desc = "Explorer",
       },
     },
     opts = {
       filesystem = {
+        follow_current_file = {
+          enabled = true,
+          leave_dirs_open = false,
+        },
         filtered_items = {
           visible = true,
           hide_dotfiles = false,
