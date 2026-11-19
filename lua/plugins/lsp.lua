@@ -1,5 +1,5 @@
 local function read_intelephense_license()
-  local license_path = vim.fn.expand("~/.config/intelephense/global/licence.txt")
+  local license_path = vim.fn.expand("~/.config/intelephense/global/license.txt")
 
   if vim.fn.filereadable(license_path) ~= 1 then
     vim.notify("Intelephense licence file is missing: " .. license_path, vim.log.levels.ERROR)
