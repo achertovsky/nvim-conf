@@ -42,6 +42,9 @@ return {
                   "**/node_modules/**",
                 },
               },
+              inlayHint = {
+                parameterNames = false,
+              },
             },
           },
         },
